@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-bg-color: black;
+  --main-bg-color: rgb(4, 51, 255);
+  --primary-text-color: white;
+  --the-issue-text-color: rgb(0, 253, 255);
+  --the-solution-bg-color: yellow;
+}
+
+/* Header Styling: */
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--header-bg-color);
+  color: white;
+  font-family: monospace, sans-serif;
+}
+
+header nav .eye {
+  margin-top: 32px;
+  margin-left: 32px;
+  font-size: 42px;
+}
+
+header .main-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+header .scroll-down {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+
+header .scroll-down p a {
+  color: var(--primary-text-color);
+}
+
+/*Main Styling: */
+main article.the-issue {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace, sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--the-issue-text-color);
+}
+
+main article.the-issue .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main article.the-issue .content h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+main article.the-issue .content p {
+  font-size: 28px;
+  color: var(--primary-text-color);
+  max-width: 90%;
+  /* margin: 0 auto; */
+}
+
+main article.the-solution {
+  position: relative;
+  font-family: monospace, sans-serif;
+  background-color: var(--the-solution-bg-color);
+  color: var(--header-bg-color);
+}
+
+main article.the-solution .content h2 {
+  color: var(--header-bg-color);
+  font-size: 32px;
+  margin: 22px 32px;
+}
+
+main article.the-solution .content p {
+  color: var(--header-bg-color);
+  font-size: 28px;
+  margin: 22px 32px;
+}
