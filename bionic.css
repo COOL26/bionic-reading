@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header h1 {
+  /* text-align: center; */
+  font-family: monospace, sans-serif;
+  font-size: 38px;
+  margin: 12px;
+}
+
+main textarea {
+  margin-left: 12px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: #6f0;
+  font-size: 18px;
+  padding: 3px;
+  resize: none;
+}
+
+main button {
+  font-size: 22px;
+  padding: 12px 32px;
+  font-family: monospace, sans-serif;
+  margin-top: 22px;
+  margin-left: 12px;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+}
