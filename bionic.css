@@ -36,3 +36,15 @@ main button {
   border: 3px solid white;
   color: white;
 }
+
+#dummy {
+  display: none;
+  font-family: monospace, sans-serif;
+  font-size: 22px;
+  background-color: white;
+  color: black;
+  font-weight: 100;
+  width: 94%;
+  min-height: 60vh;
+  margin-left: 12px;
+}

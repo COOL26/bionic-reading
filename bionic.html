@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bionic.css" />
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -12,16 +13,17 @@
       <h1>Paste your text here &#8595;</h1>
     </header>
     <main>
+      <div id="dummy"></div>
       <textarea
         name="bionic-reading"
         id="bionic-reading"
-        cols="35"
+        cols="32"
         rows="20"
         placeholder="Type/Paste your text here which you want to convert into bionic form..."
         required
       ></textarea>
-      <button type="button">Convert</button>
-      <button>Reset</button>
+      <button type="button" id="convert">Convert</button>
+      <button type="button" id="reset">Reset</button>
     </main>
     <footer></footer>
   </body>
