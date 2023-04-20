@@ -28,4 +28,5 @@ reset.addEventListener("click", () => {
   dummy.style.display = "none";
   text.style.display = "block";
   text.value = "";
+  s = "";
 });
