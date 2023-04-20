@@ -24,6 +24,7 @@ main textarea {
   font-size: 18px;
   padding: 3px;
   resize: none;
+  width: 95%;
 }
 
 main button {
