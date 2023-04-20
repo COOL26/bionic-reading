@@ -49,3 +49,17 @@ main button {
   min-height: 60vh;
   margin-left: 12px;
 }
+
+.btns {
+  position: relative;
+}
+
+#home {
+  position: absolute;
+  right: 4%;
+  bottom: 0%;
+  max-width: 64px;
+  padding: 4px;
+  height: auto;
+  background-color: white;
+}
