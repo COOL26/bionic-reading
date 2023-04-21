@@ -148,3 +148,17 @@ footer {
 footer .insta {
   font-size: 42px;
 }
+
+/*animation*/
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(-100%);
+  transition: opacity 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
