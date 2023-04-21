@@ -76,7 +76,7 @@ main article.the-issue .content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 95%;
+  min-width: 88%;
   margin-left: 22px;
 }
 
@@ -94,7 +94,7 @@ main article.the-issue .content p {
 main article.the-solution {
   position: relative;
   width: 100%;
-  height: 105vh;
+  height: 120vh;
   font-family: monospace, sans-serif;
   background-color: var(--purple-bg);
 }
@@ -104,7 +104,7 @@ main article.the-solution .content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 95%;
+  min-width: 88%;
 }
 
 main article.the-solution .content h2 {
