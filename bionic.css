@@ -57,9 +57,9 @@ main button {
 
 #home {
   position: absolute;
-  right: 4%;
+  right: 22px;
   bottom: 0%;
-  max-width: 55px;
+  max-width: 40px;
   padding: 4px;
   height: 55px;
   background-color: white;
