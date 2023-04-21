@@ -13,6 +13,11 @@
   --purple-bg: #963484;
 }
 
+/*html*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*Body: */
 body {
   position: relative;
@@ -71,6 +76,8 @@ main article.the-issue .content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 95%;
+  margin-left: 22px;
 }
 
 main article.the-issue .content h2 {
@@ -97,7 +104,7 @@ main article.the-solution .content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 100%;
+  min-width: 95%;
 }
 
 main article.the-solution .content h2 {
@@ -112,6 +119,14 @@ main article.the-solution .content p {
   font-size: 28px;
   margin: 22px 32px;
   color: var(--primary-text-color);
+}
+
+main .scroll-down-issue {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
 }
 
 /*footer design: */
