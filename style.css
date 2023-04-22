@@ -34,9 +34,21 @@ header {
   font-family: monospace, sans-serif;
 }
 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header nav .eye {
   margin-top: 32px;
   margin-left: 32px;
+  font-size: 42px;
+}
+
+header nav .book {
+  margin-top: 32px;
+  margin-right: 32px;
   font-size: 42px;
 }
 

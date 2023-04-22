@@ -39,7 +39,8 @@ main button {
   color: white;
 }
 
-#dummy {
+#dummy,
+#code {
   display: none;
   font-family: monospace, sans-serif;
   font-size: 22px;
@@ -101,6 +102,10 @@ main button {
 #convert:hover,
 #reset:hover {
   color: black;
+}
+
+#code {
+  display: none;
 }
 
 /*media queries*/
