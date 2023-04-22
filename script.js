@@ -2,7 +2,6 @@ const text = document.getElementById("bionic-reading");
 const convertBtn = document.getElementById("convert");
 const reset = document.getElementById("reset");
 const dummy = document.getElementById("dummy");
-const code = document.getElementById("code");
 let s = "";
 convertBtn.addEventListener("click", () => {
   if (dummy.style.display === "block") return;
@@ -18,8 +17,6 @@ convertBtn.addEventListener("click", () => {
   text.style.display = "none";
   dummy.style.display = "block";
   dummy.innerHTML = `${s}`;
-  code.style.display = "block";
-  code.textContent = `${s}`;
 });
 
 reset.addEventListener("click", () => {
