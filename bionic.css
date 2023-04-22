@@ -43,12 +43,13 @@ main button {
   display: none;
   font-family: monospace, sans-serif;
   font-size: 22px;
-  background-color: white;
+  background-color: rgb(219, 219, 219);
   color: black;
   font-weight: 100;
   width: 94%;
   min-height: 60vh;
   margin-left: 12px;
+  line-height: 1.5;
 }
 
 .btns {
@@ -100,4 +101,12 @@ main button {
 #convert:hover,
 #reset:hover {
   color: black;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 480px) {
+  #dummy {
+    font-size: 28px;
+  }
 }
