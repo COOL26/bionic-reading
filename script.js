@@ -4,6 +4,7 @@ const reset = document.getElementById("reset");
 const dummy = document.getElementById("dummy");
 let s = "";
 convertBtn.addEventListener("click", () => {
+  if (dummy.style.display === "block") return;
   const userTxt = text.value;
   const txtArray = [...userTxt.split(" ")];
   let variable = 0;
