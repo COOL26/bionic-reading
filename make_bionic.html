@@ -40,6 +40,19 @@
       </div>
     </main>
     <br /><br />
-    <footer></footer>
+    <!-- Javascript Code for copying text: -->
+    <script>
+      const copyAllTwo = document.getElementById("copy-all-2");
+      copyAllTwo.addEventListener("click", () => {
+        if (!code) return;
+        let elementText = code.innerText;
+        let inputElement = document.createElement("input");
+        inputElement.setAttribute("value", elementText);
+        document.body.appendChild(inputElement);
+        inputElement.select();
+        document.execCommand("copy");
+        inputElement.parentNode.removeChild(inputElement);
+      });
+    </script>
   </body>
 </html>

@@ -28,9 +28,9 @@ header h1 {
   user-select: none;
 }
 
-#copy-all-1,
+#copy-all-1:active,
 #copy-all-2:active {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 main textarea {

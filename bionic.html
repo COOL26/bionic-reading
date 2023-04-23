@@ -22,7 +22,7 @@
       </h1>
     </header>
     <main>
-      <div id="dummy"></div>
+      <p id="dummy"></p>
       <textarea
         name="bionic-reading"
         id="bionic-reading"
@@ -40,6 +40,19 @@
       </div>
     </main>
     <br /><br />
-    <footer></footer>
+    <!-- Javascript Code for copying text: -->
+    <script>
+      const copyAllOne = document.getElementById("copy-all-1");
+      copyAllOne.addEventListener("click", () => {
+        if (!dummy) return;
+        let elementText = dummy.innerText;
+        let inputElement = document.createElement("input");
+        inputElement.setAttribute("value", elementText);
+        document.body.appendChild(inputElement);
+        inputElement.select();
+        document.execCommand("copy");
+        inputElement.parentNode.removeChild(inputElement);
+      });
+    </script>
   </body>
 </html>
