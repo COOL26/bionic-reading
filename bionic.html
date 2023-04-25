@@ -9,13 +9,27 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
     <script src="script.js" defer></script>
     <title>Convert text to Bionic form</title>
   </head>
   <body>
     <header>
       <h1>
-        Paste your text here &#8595;
+        <p>Paste your text here &#8595;</p>
+        <div class="box">
+          <span id="speak" class="material-symbols-outlined">
+            select_to_speak
+          </span>
+          <span id="pause" class="material-symbols-outlined"> pause </span>
+        </div>
         <span class="material-symbols-outlined" id="copy-all-1">
           copy_all
         </span>
@@ -34,6 +48,7 @@
       <div class="btns">
         <button type="button" id="convert">Convert</button>
         <button type="button" id="reset">Reset</button>
+
         <a href="index.html">
           <img id="home" src="Assets/house-chimney-solid.svg" alt="" />
         </a>

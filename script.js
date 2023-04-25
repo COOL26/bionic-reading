@@ -2,6 +2,9 @@ const text = document.getElementById("bionic-reading");
 const convertBtn = document.getElementById("convert");
 const reset = document.getElementById("reset");
 const dummy = document.getElementById("dummy");
+const speak = document.getElementById("speak");
+const play = document.getElementById("play");
+const pause = document.getElementById("pause");
 let s = "";
 convertBtn.addEventListener("click", () => {
   if (dummy.style.display === "block") return;
@@ -24,4 +27,17 @@ reset.addEventListener("click", () => {
   text.style.display = "block";
   text.value = "";
   s = "";
+});
+
+speak.addEventListener("click", () => {
+  if (speechSynthesis.paused && speechSynthesis.speaking) {
+    return speechSynthesis.resume();
+  }
+  const utter = new SpeechSynthesisUtterance(dummy.innerText);
+  utter.rate = 1;
+  speechSynthesis.speak(utter);
+});
+
+pause.addEventListener("click", () => {
+  if (speechSynthesis.speaking) speechSynthesis.pause();
 });
