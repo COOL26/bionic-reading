@@ -13,8 +13,8 @@ convertBtn.addEventListener("click", () => {
   let variable = 0;
   for (const element of txtArray) {
     variable = 0;
-    s += element.substring(0, element.length / 2).bold();
-    s += element.substring(element.length / 2);
+    s += element.substring(0, element.length / 2 + 1).bold();
+    s += element.substring(element.length / 2 + 1);
     s += " ";
   }
   text.style.display = "none";
