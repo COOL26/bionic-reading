@@ -174,3 +174,17 @@ footer .insta {
   opacity: 1;
   filter: blur(0);
 }
+
+/*Media queries:*/
+
+@media screen and (min-width: 480px) {
+  header .main-heading {
+    font-size: 32px;
+  }
+  header nav .eye {
+    font-size: 32px;
+  }
+  header nav .book {
+    font-size: 32px;
+  }
+}
