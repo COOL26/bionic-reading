@@ -3,6 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*Code to remove that ugly blue shadow all over the link whenever i link on it on mobile device*/
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 
 :root {
   --header-bg-color: black;
@@ -40,15 +56,11 @@ header nav {
   align-items: center;
 }
 
+header nav .book,
 header nav .eye {
   margin-top: 32px;
-  margin-left: 32px;
-  font-size: 42px;
-}
-
-header nav .book {
-  margin-top: 32px;
   margin-right: 32px;
+  margin-left: 32px;
   font-size: 42px;
 }
 

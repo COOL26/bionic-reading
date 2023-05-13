@@ -29,6 +29,8 @@ reset.addEventListener("click", () => {
   s = "";
 });
 
+/*
+(*************IGNORE THIS*************************)
 speak.addEventListener("click", () => {
   if (speechSynthesis.paused && speechSynthesis.speaking) {
     return speechSynthesis.resume();
@@ -41,3 +43,5 @@ speak.addEventListener("click", () => {
 pause.addEventListener("click", () => {
   if (speechSynthesis.speaking) speechSynthesis.pause();
 });
+
+*/
