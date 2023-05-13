@@ -103,13 +103,17 @@ main button {
 }
 
 .btns {
-  position: relative;
+  /* position: relative; */
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #home {
-  position: absolute;
-  right: 20px;
-  bottom: 0%;
+  margin-top: 32px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   max-width: 40px;
   padding: 4px;
   height: 55px;
