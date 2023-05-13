@@ -187,4 +187,8 @@ footer .insta {
   header nav .book {
     font-size: 32px;
   }
+  .the-issue p,
+  .the-solution p {
+    font-size: 26px;
+  }
 }
