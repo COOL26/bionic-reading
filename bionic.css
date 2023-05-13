@@ -143,12 +143,8 @@ main button {
 
 /*media queries*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   #dummy {
     font-size: 28px;
-  }
-  #copy-all-1,
-  #copy-all-2 {
-    user-select: none;
   }
 }

@@ -181,11 +181,10 @@ footer .insta {
   header .main-heading {
     font-size: 32px;
   }
+  header nav .book,
   header nav .eye {
     font-size: 32px;
-  }
-  header nav .book {
-    font-size: 32px;
+    user-select: none;
   }
   main article.the-issue .content p,
   main article.the-solution .content p {
