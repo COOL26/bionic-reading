@@ -125,7 +125,14 @@ main button {
   cursor: pointer;
 }
 
-/*Button animations: */
+#convert:hover,
+#reset:hover {
+  background-color: #6f0;
+  color: black;
+}
+
+/*Button animations: 
+
 #convert,
 #reset {
   position: relative;
@@ -156,6 +163,8 @@ main button {
 #reset:hover {
   color: black;
 }
+
+*/
 
 #code {
   display: none;
