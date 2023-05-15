@@ -2,9 +2,7 @@ const text = document.getElementById("bionic-reading");
 const convertBtn = document.getElementById("convert");
 const reset = document.getElementById("reset");
 const dummy = document.getElementById("dummy");
-const speak = document.getElementById("speak");
-const play = document.getElementById("play");
-const pause = document.getElementById("pause");
+
 let s = "";
 convertBtn.addEventListener("click", () => {
   if (dummy.style.display === "block") return;
@@ -13,8 +11,8 @@ convertBtn.addEventListener("click", () => {
   let variable = 0;
   for (const element of txtArray) {
     variable = 0;
-    s += element.substring(0, element.length / 2 + 1).bold();
-    s += element.substring(element.length / 2 + 1);
+    s += element.substring(0, element.length / 2).bold();
+    s += element.substring(element.length / 2);
     s += " ";
   }
   text.style.display = "none";
@@ -30,6 +28,9 @@ reset.addEventListener("click", () => {
 });
 
 /*
+// const speak = document.getElementById("speak");
+// const play = document.getElementById("play");
+// const pause = document.getElementById("pause");
 (*************IGNORE THIS*************************)
 speak.addEventListener("click", () => {
   if (speechSynthesis.paused && speechSynthesis.speaking) {
